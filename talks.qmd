@@ -4,15 +4,30 @@ title: "Talks & Teaching"
 
 ## PyCon Ireland 2026
 
-**Can Machine-Learning Models beat Classical Option Pricing?**
+### Can Machine-Learning Models beat Classical Option Pricing?
 
-Upcoming talk presenting my comparison of PINNs, PIKANs and
-Crank–Nicolson for Black–Scholes option pricing.
+**Upcoming talk**
+
+Can physics-informed neural networks compete with classical
+numerical methods? This talk presents my comparison of PINNs,
+PIKANs and Crank–Nicolson for Black–Scholes option pricing,
+covering accuracy, runtime and sensitivity to volatility.
+
+[Related project](option-pricing.qmd)
 
 ## Irish Student Managed Fund
 
-**Position Sizing and Risk Management for Systematic Trading**
+### Position Sizing and Risk Management for Systematic Trading
 
-A recorded lecture covering position sizing and risk management,
-with a Python example illustrating volatility targeting,
+A recorded introductory lecture on sizing positions and
+managing risk in systematic trading.
+
+The lecture covers how position sizing affects portfolio
+risk, with a Python example exploring volatility targeting,
 turnover and drawdowns.
+
+The accompanying notebook uses simulated returns as an
+educational illustration.
+
+[Download slides](files/position-sizing-slides.pdf) ·
+[Download Python notebook](files/portfolio_sizing.ipynb)

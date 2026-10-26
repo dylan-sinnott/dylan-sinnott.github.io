@@ -14,8 +14,23 @@ University Scholar, 2024/2025.
 
 ## Activities
 
-- Energy Analyst, UCD Student Managed Fund.
-- Regional Director, Irish Student Managed Fund.
+**Energy Analyst — UCD Student Managed Fund**
+
+My work includes energy-sector company analysis and
+earnings reporting.
+
+**Regional Director — Irish Student Managed Fund**
+
+I contribute to the fund’s educational activities, including
+a recorded lecture on position sizing and risk management
+for systematic trading.
+
+[View talks and teaching](talks.qmd)
+
+## Selected achievements
+
+- University Scholar, University of Galway, 2024/2025.
+- Member of the winning team at SIG Hivemind, October 2026.
 
 ## Outside academics
 

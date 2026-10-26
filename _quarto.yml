@@ -17,6 +17,15 @@ website:
     right:
       - icon: github
         href: https://github.com/dylan-sinnott
+    page-footer:
+      left: "Dylan Sinnott"
+      right:
+        - text: "Email"
+          href: "mailto:dylansinnott572@gmail.com"
+        - text: "LinkedIn"
+          href: "https://www.linkedin.com/in/dylansinnott/"
+        - text: "GitHub"
+          href: "https://github.com/dylan-sinnott"
 
 format:
   html:

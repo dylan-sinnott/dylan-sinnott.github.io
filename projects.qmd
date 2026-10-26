@@ -20,6 +20,17 @@ the strongest combination of accuracy and computational efficiency.
 
 ## The Fundamental Theorem of Calculus for Absolutely Continuous Functions
 
-My final-year Applied Mathematics dissertation at the University
-of Galway explored the relationship between absolute continuity,
-differentiation and integration.
+My undergraduate dissertation at the University of Galway
+examined how absolute continuity connects differentiation
+and integration.
+
+The central question is when a function can be recovered
+by integrating its derivative. Absolute continuity provides
+the appropriate framework for this form of the Fundamental
+Theorem of Calculus.
+
+This expository project developed my experience in rigorous
+mathematical reasoning and communicating a sustained
+mathematical argument.
+
+[Read the dissertation](files/absolute-continuity-dissertation.pdf)

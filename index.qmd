@@ -9,6 +9,9 @@ from the University of Galway.
 My interests include quantitative research, numerical methods
 and machine learning.
 
+[Explore projects](projects.qmd){.btn .btn-primary}
+[Download CV](files/CV_Dylan_Sinnott.pdf){.btn .btn-outline-primary}
+
 ## Featured project
 
 ### Benchmarking neural networks for option pricing
@@ -20,7 +23,7 @@ method for Black–Scholes option pricing.
 The project examines accuracy, computational cost and performance
 across different volatility assumptions.
 
-[Explore my projects](projects.qmd)
+[Read the project](option-pricing.qmd)
 
 ## Upcoming talk
 
