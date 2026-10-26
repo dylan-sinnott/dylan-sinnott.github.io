@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Dylan Sinnott"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: talks.qmd
+        text: Talks & Teaching
+      - href: about.qmd
+        text: About / CV
+    right:
+      - icon: github
+        href: https://github.com/dylan-sinnott
+
+format:
+  html:
+    theme: cosmo
+    toc: false

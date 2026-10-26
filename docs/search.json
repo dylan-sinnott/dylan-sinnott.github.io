@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks & Teaching",
+    "section": "",
+    "text": "Can Machine-Learning Models beat Classical Option Pricing?\nUpcoming talk presenting my comparison of PINNs, PIKANs and Crank–Nicolson for Black–Scholes option pricing."
+  },
+  {
+    "objectID": "talks.html#pycon-ireland-2026",
+    "href": "talks.html#pycon-ireland-2026",
+    "title": "Talks & Teaching",
+    "section": "",
+    "text": "Can Machine-Learning Models beat Classical Option Pricing?\nUpcoming talk presenting my comparison of PINNs, PIKANs and Crank–Nicolson for Black–Scholes option pricing."
+  },
+  {
+    "objectID": "talks.html#irish-student-managed-fund",
+    "href": "talks.html#irish-student-managed-fund",
+    "title": "Talks & Teaching",
+    "section": "Irish Student Managed Fund",
+    "text": "Irish Student Managed Fund\nPosition Sizing and Risk Management for Systematic Trading\nA recorded lecture covering position sizing and risk management, with a Python example illustrating volatility targeting, turnover and drawdowns."
+  },
+  {
+    "objectID": "option-pricing.html",
+    "href": "option-pricing.html",
+    "title": "Neural Networks vs Classical Option Pricing",
+    "section": "",
+    "text": "Can physics-informed neural networks compete with a classical numerical solver for option pricing? In this project, I implemented and compared three approaches to pricing European call options: Crank–Nicolson, a physics-informed neural network (PINN), and a physics-informed Kolmogorov–Arnold network (PIKAN).\nFor the one-dimensional Black–Scholes problem tested, Crank–Nicolson achieved the lowest pricing errors and shortest runtime. PIKAN improved substantially on the baseline PINN’s accuracy, but required considerably more training time."
+  },
+  {
+    "objectID": "option-pricing.html#overview",
+    "href": "option-pricing.html#overview",
+    "title": "Neural Networks vs Classical Option Pricing",
+    "section": "",
+    "text": "Can physics-informed neural networks compete with a classical numerical solver for option pricing? In this project, I implemented and compared three approaches to pricing European call options: Crank–Nicolson, a physics-informed neural network (PINN), and a physics-informed Kolmogorov–Arnold network (PIKAN).\nFor the one-dimensional Black–Scholes problem tested, Crank–Nicolson achieved the lowest pricing errors and shortest runtime. PIKAN improved substantially on the baseline PINN’s accuracy, but required considerably more training time."
+  },
+  {
+    "objectID": "option-pricing.html#why-this-problem",
+    "href": "option-pricing.html#why-this-problem",
+    "title": "Neural Networks vs Classical Option Pricing",
+    "section": "Why this problem?",
+    "text": "Why this problem?\nBlack–Scholes provides a useful controlled benchmark because European call prices have an analytical solution. This makes it possible to measure approximation errors directly rather than compare numerical methods against another approximate reference.\nThe aim was to investigate the accuracy and computational cost of physics-informed learning in a setting where a strong classical method already exists."
+  },
+  {
+    "objectID": "option-pricing.html#how-i-compared-the-methods",
+    "href": "option-pricing.html#how-i-compared-the-methods",
+    "title": "Neural Networks vs Classical Option Pricing",
+    "section": "How I compared the methods",
+    "text": "How I compared the methods\nCrank–Nicolson approximates the pricing equation on a grid, solving a tridiagonal linear system at each time step. The PINN instead represents the price function with a multilayer perceptron, trained to satisfy the differential equation and its initial and boundary conditions. The PIKAN uses the same physics-informed principle with a spline-based Kolmogorov–Arnold network.\nFor the main experiment, I used a strike price of 100, a one-year maturity, a 5% risk-free rate and 20% volatility. All methods were assessed against analytical prices on the same 100 × 50 evaluation grid.\nI evaluated several PINN configurations and two PIKAN training lengths. Performance measures included root mean squared error (RMSE), maximum absolute error, relative L2 error and runtime."
+  },
+  {
+    "objectID": "option-pricing.html#main-findings",
+    "href": "option-pricing.html#main-findings",
+    "title": "Neural Networks vs Classical Option Pricing",
+    "section": "Main findings",
+    "text": "Main findings\nIn the main comparison, Crank–Nicolson achieved an RMSE of approximately 0.0098 in 0.29 seconds. The baseline PINN achieved approximately 0.501 in 33.7 seconds, while the PIKAN trained for 3,000 epochs achieved approximately 0.0581 in 257.6 seconds.\nThe PIKAN therefore offered a clear accuracy improvement over the baseline PINN, although Crank–Nicolson remained both faster and more accurate. Increasing PINN width or adding a learning-rate scheduler did not consistently improve performance, illustrating the importance of testing implementation choices.\n\nSensitivity to volatility\nIn a separate sensitivity experiment, I tested volatility values from 10% to 40%. Crank–Nicolson retained the lowest RMSE at every tested value, and PIKAN consistently improved on the baseline PINN.\n\n\n\nPricing RMSE across four volatility assumptions in the sensitivity experiment. Crank–Nicolson achieved the lowest error at each tested value.\n\n\nErrors increased noticeably for both Crank–Nicolson and PIKAN at 40% volatility. This motivates further investigation of resolution, boundary effects and training choices.\nThe runtime comparison shows that PIKAN’s improvement over the baseline PINN came at substantial computational cost. Crank–Nicolson runtimes were positive but too small to distinguish clearly on the plotted scale.\n\n\n\nRecorded runtime across four volatility assumptions. Neural-network training was substantially more expensive than the Crank–Nicolson solve."
+  },
+  {
+    "objectID": "option-pricing.html#what-i-learned-and-limitations",
+    "href": "option-pricing.html#what-i-learned-and-limitations",
+    "title": "Neural Networks vs Classical Option Pricing",
+    "section": "What I learned and limitations",
+    "text": "What I learned and limitations\nThe main lesson was the value of a strong numerical baseline. Learning the overall shape of a price surface is not sufficient: accuracy and computational cost must also justify the approach.\nThese results concern the implementations and problem tested. The neural models differed in parameter counts, training points and training lengths, so the comparison does not isolate architecture alone. Experiments used a laptop without a dedicated CUDA-enabled GPU, and fixed seeds rather than repeated trials across multiple seeds. Reported runtimes concern solving or training, rather than a separate inference-speed benchmark.\nThe study excludes stochastic volatility, dividends and early exercise. A natural extension is to investigate how the accuracy–cost trade-off changes as problem dimensionality increases, using matched computational budgets and repeated runs."
+  },
+  {
+    "objectID": "option-pricing.html#code-and-report",
+    "href": "option-pricing.html#code-and-report",
+    "title": "Neural Networks vs Classical Option Pricing",
+    "section": "Code and report",
+    "text": "Code and report\nView the code · Read the full report\nBack to projects"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About / CV",
+    "section": "",
+    "text": "University College Dublin\nMSc Quantitative Finance, 2026–present.\nUniversity of Galway\nBSc Science (Applied Mathematics), First Class Honours, 2026.\nUniversity Scholar, 2024/2025."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About / CV",
+    "section": "",
+    "text": "University College Dublin\nMSc Quantitative Finance, 2026–present.\nUniversity of Galway\nBSc Science (Applied Mathematics), First Class Honours, 2026.\nUniversity Scholar, 2024/2025."
+  },
+  {
+    "objectID": "about.html#activities",
+    "href": "about.html#activities",
+    "title": "About / CV",
+    "section": "Activities",
+    "text": "Activities\n\nEnergy Analyst, UCD Student Managed Fund.\nRegional Director, Irish Student Managed Fund."
+  },
+  {
+    "objectID": "about.html#outside-academics",
+    "href": "about.html#outside-academics",
+    "title": "About / CV",
+    "section": "Outside academics",
+    "text": "Outside academics\nI enjoy chess, swimming and following Arsenal."
+  },
+  {
+    "objectID": "about.html#cv",
+    "href": "about.html#cv",
+    "title": "About / CV",
+    "section": "CV",
+    "text": "CV\nDownload my CV"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dylan Sinnott",
+    "section": "",
+    "text": "I am an MSc Quantitative Finance student at University College Dublin, with a First Class Honours degree in Applied Mathematics from the University of Galway.\nMy interests include quantitative research, numerical methods and machine learning."
+  },
+  {
+    "objectID": "index.html#featured-project",
+    "href": "index.html#featured-project",
+    "title": "Dylan Sinnott",
+    "section": "Featured project",
+    "text": "Featured project\n\nBenchmarking neural networks for option pricing\nA comparison of Physics-Informed Neural Networks, Physics-Informed Kolmogorov–Arnold Networks and the Crank–Nicolson finite-difference method for Black–Scholes option pricing.\nThe project examines accuracy, computational cost and performance across different volatility assumptions.\nExplore my projects"
+  },
+  {
+    "objectID": "index.html#upcoming-talk",
+    "href": "index.html#upcoming-talk",
+    "title": "Dylan Sinnott",
+    "section": "Upcoming talk",
+    "text": "Upcoming talk\nPyCon Ireland 2026 — Can Machine-Learning Models beat Classical Option Pricing?\nTalks and teaching"
+  },
+  {
+    "objectID": "index.html#find-me",
+    "href": "index.html#find-me",
+    "title": "Dylan Sinnott",
+    "section": "Find me",
+    "text": "Find me\nGitHub LinkedIn"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "I compared Crank–Nicolson, Physics-Informed Neural Networks (PINNs) and Physics-Informed Kolmogorov–Arnold Networks (PIKANs), using the analytical Black–Scholes solution as a reference.\nThe evaluation considers accuracy, runtime, convergence and sensitivity to volatility.\nIn the tested one-dimensional setting, Crank–Nicolson provided the strongest combination of accuracy and computational efficiency.\nRead the project View the code on GitHub"
+  },
+  {
+    "objectID": "projects.html#benchmarking-pinns-pikans-and-finite-difference-methods-for-option-pricing",
+    "href": "projects.html#benchmarking-pinns-pikans-and-finite-difference-methods-for-option-pricing",
+    "title": "Projects",
+    "section": "",
+    "text": "I compared Crank–Nicolson, Physics-Informed Neural Networks (PINNs) and Physics-Informed Kolmogorov–Arnold Networks (PIKANs), using the analytical Black–Scholes solution as a reference.\nThe evaluation considers accuracy, runtime, convergence and sensitivity to volatility.\nIn the tested one-dimensional setting, Crank–Nicolson provided the strongest combination of accuracy and computational efficiency.\nRead the project View the code on GitHub"
+  },
+  {
+    "objectID": "projects.html#the-fundamental-theorem-of-calculus-for-absolutely-continuous-functions",
+    "href": "projects.html#the-fundamental-theorem-of-calculus-for-absolutely-continuous-functions",
+    "title": "Projects",
+    "section": "The Fundamental Theorem of Calculus for Absolutely Continuous Functions",
+    "text": "The Fundamental Theorem of Calculus for Absolutely Continuous Functions\nMy final-year Applied Mathematics dissertation at the University of Galway explored the relationship between absolute continuity, differentiation and integration."
+  }
+]

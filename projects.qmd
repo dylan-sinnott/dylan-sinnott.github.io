@@ -1,0 +1,25 @@
+---
+title: "Projects"
+---
+
+## Benchmarking PINNs, PIKANs and finite-difference methods for option pricing
+
+I compared Crank–Nicolson, Physics-Informed Neural Networks
+(PINNs) and Physics-Informed Kolmogorov–Arnold Networks
+(PIKANs), using the analytical Black–Scholes solution as
+a reference.
+
+The evaluation considers accuracy, runtime, convergence and
+sensitivity to volatility.
+
+In the tested one-dimensional setting, Crank–Nicolson provided
+the strongest combination of accuracy and computational efficiency.
+
+[Read the project](option-pricing.qmd)
+[View the code on GitHub](https://github.com/dylan-sinnott/black-scholes-pinn-pikan-benchmark)
+
+## The Fundamental Theorem of Calculus for Absolutely Continuous Functions
+
+My final-year Applied Mathematics dissertation at the University
+of Galway explored the relationship between absolute continuity,
+differentiation and integration.

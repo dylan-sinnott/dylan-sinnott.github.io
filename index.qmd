@@ -1,0 +1,35 @@
+---
+title: "Dylan Sinnott"
+---
+
+I am an MSc Quantitative Finance student at University College
+Dublin, with a First Class Honours degree in Applied Mathematics
+from the University of Galway.
+
+My interests include quantitative research, numerical methods
+and machine learning.
+
+## Featured project
+
+### Benchmarking neural networks for option pricing
+
+A comparison of Physics-Informed Neural Networks, Physics-Informed
+Kolmogorov–Arnold Networks and the Crank–Nicolson finite-difference
+method for Black–Scholes option pricing.
+
+The project examines accuracy, computational cost and performance
+across different volatility assumptions.
+
+[Explore my projects](projects.qmd)
+
+## Upcoming talk
+
+**PyCon Ireland 2026 — Can Machine-Learning Models beat Classical
+Option Pricing?**
+
+[Talks and teaching](talks.qmd)
+
+## Find me
+
+[GitHub](https://github.com/dylan-sinnott)
+[LinkedIn](https://www.linkedin.com/in/dylansinnott/)
